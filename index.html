@@ -1,1 +1,234 @@
-Hello World
+
+<!doctype html>
+
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html> <![endif]-->
+<!--[if !IE]><!--> <html class="no-js" lang="EN"><!--<![endif]-->
+
+<head>
+
+
+	<meta charset="UTF-8" />
+    <title>cuLearn Login | Carleton University</title>
+    <link rel="stylesheet" href="https://culms.s3.amazonaws.com/culearn/style-v2.css" type="text/css" media="screen" />
+    <link rel="icon" href="https://cuweb.s3.amazonaws.com/prod/images/icon.gif" type="image/gif" />
+
+    <!--[if lt IE 9]>
+	<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$( document ).ready(function() {
+
+
+
+
+			$('#da1').on('submit', function(event) {
+
+				if ( $('#user').val() === "Username" ) {
+					event.preventDefault();
+					alert('Please enter a valid username');
+				} else {
+					return;
+				}
+			});
+		});
+	</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2885440-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<style>
+.hide-label {margin-left: -99999px;}
+</style>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+
+<div class="navfull">
+	<nav>
+        <div class="navleft"><a href="http://carleton.ca">Carleton.ca</a></div>
+        <div class="navright">
+            <ul>
+                <li><a href="http://carleton.ca/students">Student News</a></li>
+                <li><a href="http://carleton.ca/portal/">MyCarleton</a></li>
+                <li><a href="http://central.carleton.ca/">Carleton Central</a></li>
+                <li><a href="http://www.library.carleton.ca/">Library</a></li>
+            </ul>
+        </div>
+        <div class="clearfloat"></div>
+    </nav>
+</div>
+
+<div class="container">
+
+    <header>
+    	<div class="culogo">
+        	<h2><a href="http://www.carleton.ca/">cuLearn</a></h2>
+        </div> <!-- end culogo -->
+        <div class="sitesearch">
+        	<form target="_blank" class="searchform" action="http://search.carleton.ca/search">
+				<input class="searchfield" type="text" name="q" value="Search cuLearn support" id="s" title="Search cuLearn support" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"/>
+				<input type="hidden" name="site" value="culearnsupport"/>
+				<input type="hidden" name="client" value="ccms"/>
+				<input type="hidden" name="output" value="xml_no_dtd"/>
+				<input type="hidden" name="proxystylesheet" value="ccms"/>
+                <button type="submit" name="submit">Search</button>
+			</form>
+
+        </div> <!-- end sitesearch -->
+        <div class="clearfloat"></div>
+    </header>
+
+    <div class="bannerimg">
+
+		<div class="loginarea">
+
+            <form class="loginform" id="da1" name="login" method="post" action="https://culearn.carleton.ca/moodle/login/index.php">
+                <label for="user" class="hide-label">Username:</label>
+                <input class="myinput" value="Username" id="user" name="username" onBlur="if (this.value == '') {this.value = 'Username';}" onFocus="if (this.value == 'Username') {this.value = '';}" tabindex="1" >
+<!--				<input class="myinput" value="Username" id="user" name="username" placeholder="Username" tabindex="1" >-->
+
+				<label for="pass" class="hide-label">Password:</label>
+                <input class="myinput" type="password" id="pass" name="password" tabindex="2" onBlur="if (this.value == '') {this.value = 'Password';}" onFocus="if (this.value == 'Password') {this.value = '';}" value="Password">
+<!--				<input class="myinput" type="password" id="pass" name="password" tabindex="2" placeholder="Password" value="Password">-->
+
+				<!-- <label for="submit" class="hide-label">Submit</label> -->
+                <input id="submit" class="mylogin" type="submit" name="Submit" value="login" tabindex="3"/>
+            </form>
+
+			<div class="reset-txt">
+				<p><a href="https://connect.carleton.ca/forgot-username.html">Forgot your username?</a></p>
+                <p><a href="https://myone.carleton.ca/">Forgot your password?</a></p>
+
+			</div>
+
+            <div class="clearfloat"></div>
+
+
+        </div> <!-- end loginarea -->
+
+    </div> <!-- end bannerimg -->
+
+</div> <!-- end container -->
+
+<div class="redbanner">
+	<h1>Carleton's Learning Management System</h1>
+	<div class="headerbutton"><a href="http://www.carleton.ca/culearnsupport/feedback/">Feedback</a></div>
+	<div class="clearfloat"></div>
+</div> <!-- end redbanner -->
+
+<div class="redbannerwrap">
+</div> <!-- end redbannerwrap -->
+
+<div class="container">
+
+
+
+<section class="support">
+		<div class="supportblock">
+			<a href="http://www.library.carleton.ca/copyright"><h2>Copyright And You</h2>
+			<img src="https://culms.s3.amazonaws.com/culearn/images/copyright.png" width="200" height="104" alt="More information about copyright at Carleton"></a>
+		</div>
+		<div class="supportblock">
+			<a href="http://carleton.ca/culearnsupport/instructors/"><h2>Instructor Support</h2>
+			<img src="https://culms.s3.amazonaws.com/culearn/images/support-img1.png" width="200" height="104" alt="More information about instructor support"></a>
+		</div>
+        <div class="supportblock">
+			<a href="http://carleton.ca/culearnsupport/tas/"><h2>T.A. Support</h2>
+			<img src="https://culms.s3.amazonaws.com/culearn/images/support-img2.png" width="200" height="104" alt="More information about teaching assistant support"></a>
+        </div>
+        <div class="supportblock">
+			<a href="http://carleton.ca/culearnsupport/students/"><h2>Student Support</h2>
+			<img src="https://culms.s3.amazonaws.com/culearn/images/support-img3.png" width="200" height="104" alt="More information about student support"></a>
+        </div>
+        <div class="clearfloat"></div>
+    </section> <!-- end support -->
+
+    <section class="updates">
+    	<h2>cuLearn Updates</h2>
+
+<div class="feedburnerFeedBlock"><ul>
+<li>
+    <span class="headline"><a href="https://carleton.ca/culearnsupport/2017/upcoming-culearn-outage-sept-24-2017/">Upcoming cuLearn outage Sept 24, 2017</a></span>
+    <div>There will be disruptions to the following services during the dates and times listed below: Network and Related Services – Robertson Hall Data Centre (RODC) Sunday, September 24, 2017 – 8:00 AM – 9:00 AM Clients will experience intermittent disruptions to network connectivity for Carleton Central, cuLearn, cuPortfolio, Banner applications, Carleton.ca, Exchange/Outlook email, and VoIP [&#8230;]</div>
+    <p class="date">September 21, 2017</p>
+</li>
+
+
+<li>
+    <span class="headline"><a href="https://carleton.ca/culearnsupport/2017/upcoming-culearn-outage/">Upcoming cuLearn outage</a></span>
+    <div>Clients will be unable to access cuLearn Services on Sunday, July 16 from 8-9 a.m. as ITS performs software upgrades. Full service will be restored by 9 a.m.</div>
+    <p class="date">June 29, 2017</p>
+</li>
+
+
+<li>
+    <span class="headline"><a href="https://carleton.ca/culearnsupport/2017/dont-forget-recognize-outstanding-educator-raving-raven/">Don’t forget to recognize an outstanding educator with a Raving Raven</a></span>
+    <div>As the winter semester starts to come to an end, have any professors, librarians or learning support staff gone above and beyond to make a significant impact on your experience at Carleton? Is there an outstanding educator who you can&#8217;t stop raving about? Let them know that they&#8217;re doing a great job by sending them a [&#8230;]</div>
+    <p class="date">March 27, 2017</p>
+</li>
+
+</ul></div>
+
+
+<!-- <div class="feedburnerFeedBlock">
+	<ul>
+
+	<li>
+		<span class="headline">cuLearn Updates are temporarily disabled for maintenance. We apologize for any inconvenience this may cause.</span>
+	</li>
+
+	</ul>
+</div> -->
+
+
+    </section> <!-- end updates -->
+
+</div> <!-- end container -->
+
+<div class="footerwrap">
+</div> <!-- end footerwrap -->
+
+<footer>
+	<div class="footerleft">
+		<a href="#">Carleton University</a>
+	</div> <!-- end footerleft -->
+	<div class="footerright">
+		<p>cuLearn support and resources are available at <a href="http://carleton.ca/culearnsupport">carleton.ca/culearnsupport</a></p>
+        <p><a href="/culearn/?view=m">Mobile version</a></p>
+		<iframe title="Like Carleton on Facebook" src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fcarleton.ca&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+		<g:plusone size="medium" href="http://www.carleton.ca"></g:plusone>
+        <!-- Place this tag after the last plusone tag -->
+		<script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+	</div> <!-- end footerright -->
+	<div class="clearfloat"></div>
+</footer>
+
+</body>
+</html>
