@@ -1,0 +1,14 @@
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+  padding: 25px;
+}
+
+.parallax-window {
+    min-height: 400px;
+    border-radius: 50%;
+    background: transparent;
+    overflow:hidden;
+}
