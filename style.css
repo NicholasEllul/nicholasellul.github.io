@@ -8,7 +8,7 @@
 
 .parallax-window {
     min-height: 400px;
-    border-radius: 50%;
+    border-radius: 5%;
     background: transparent;
     overflow:hidden;
 }
