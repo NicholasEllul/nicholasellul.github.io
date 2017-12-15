@@ -60,7 +60,7 @@ input.MyButton:hover {
 }
 
 .overlay-desc {
-  background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0.1);
 font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif; 
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
