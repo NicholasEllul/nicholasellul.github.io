@@ -10,7 +10,6 @@ html, body {
 	border-width: 1px;
 	border-style: solid;
 	border-color: #03a9f4;
-	text-align: center;
 	background-color: #bbdefb;
 }
 
@@ -111,7 +110,7 @@ p {
     width:80%;
     height: 100%;
     margin: 0 auto;
-    position: relative;
+    position: aboslute;
 }
 
 .section-header {
