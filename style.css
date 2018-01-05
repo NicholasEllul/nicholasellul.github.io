@@ -13,12 +13,6 @@ body {
     border-top: 1px solid #ffffff;
 }
 
-.container {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #03a9f4;
-    background-color: #bbdefb;
-}
 
 
 .main {
@@ -156,9 +150,6 @@ p {
     width: 200px;
     height: 100px;
     flex-grow: 1;
-    /* background-image: url(https://1enu9c17f1aj3pmqfi35l21c-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/shopify-logo-1.png);
-   background-repeat: no-repeat;
-   background-position: center center;*/
     color: white;
     font-weight: bold;
     font-size: 3em;
@@ -176,6 +167,10 @@ p {
 
 #student-desc .underline {
     border-bottom: 1px solid rgb(239, 83, 80);
+}
+
+#photo-desc .underline {
+    border-bottom: 1px solid rgb(66, 165, 245);
 }
 
 #about-box > p {
