@@ -155,9 +155,11 @@ p {
     font-size: 3em;
     text-align: center;
 }
+
 #big-video-vid > video {
     width: 100% !important;
 }
+
 .flex-item:hover {
     transition: all 0.2s ease;
     background: rgba(0, 0, 0, 0.3);
