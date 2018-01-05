@@ -1,88 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Nicholas Ellul</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="bigvideo.css">
+    <title>Nicholas Ellul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bigvideo.css">
 </head>
 
 <body>
-<div class="overlay">
-  <div class="v-center">
-    <h1>&lt; Nicholas Ellul /&gt;</h1>
-    <nav class="menu-container">
-       <div class="menu-item">
-        <a href="#about" class="MyButton">About</a>
-        <a href="#portfolio" class="MyButton">Portfolio</a>
-        <a href="#resume" class="MyButton">Resume</a>
+    <div class="overlay">
+        <div class="v-center">
+            <h1>&lt; Nicholas Ellul /&gt;</h1>
+            <nav class="menu-container">
+                <div class="menu-item">
+                    <a href="#about" class="MenuButton">About</a>
+                    <a href="#portfolio" class="MenuButton">Portfolio</a>
+                    <a href="#resume" class="MenuButton">Resume</a>
+                </div>
+            </nav>
         </div>
-    </nav>
-  </div>
-</div>
-<div class="main">
-    <div class="section" id ="about">
-    <h1 class="section-header">ABOUT</h1>
-        <p>
-            Lorem ipsum dolor sit amet, duo ei veri mollis eripuit. Scripta quaestio eum at. Utamur corpora suavitate id est, ei qui inimicus laboramus referrentur. Est eleifend definitiones ad, duis denique eu eam, per te eius ferri. Iracundia moderatius te pro, ut eam cibo dicta invidunt, facete audiam mei te.qElit error sit ne, elitr prodesset vim te. Pro corpora ocurreret et, usu at primis definitiones. Ius mazim graeco cetero at, pro no petentium accusamus. An iisque debitis delicata pro. In cum prima laoreet epicuri, sumo choro ut eum, usu at vidisse explicari philosophia. Reque pericula vis no.
-        </p>
-    </div>   
-        <div class="section"  id="portfolio">
-        <h1 class="section-header">PORTFOLIO</h1>
-        <p>
-            Lorem ipsum dolor sit amet, duo ei veri mollis eripuit. Scripta quaestio eum at. Utamur corpora suavitate id est, ei qui inimicus laboramus referrentur. Est eleifend definitiones ad, duis denique eu eam, per te eius ferri. Iracundia moderatius te pro, ut eam cibo dicta invidunt, facete audiam mei te.qElit error sit ne, elitr prodesset vim te. Pro corpora ocurreret et, usu at primis definitiones. Ius mazim graeco cetero at, pro no petentium accusamus. An iisque debitis delicata pro. In cum prima laoreet epicuri, sumo choro ut eum, usu at vidisse explicari philosophia. Reque pericula vis no.
-        </p>
+    </div>
+    <div class="main">
+        <div class="section" id="about">
+            <div class=v-centerd>
+                <h1 class="section-header">ABOUT</h1>
+                <ul class="flex-container" name="border">
+                    <li class="flex-item" onclick="updateBorder('about-dev')">
+                        <p>
+                            <span class="v-center" id="about-dev">Developer</span>
+                        </p>
+                    </li>
+                    <li class="flex-item" onclick="updateBorder('about-student')">
+                        <p><span id="about-student">Student</span></p>
+                    </li>
+                    <li class="flex-item" onclick="updateBorder('about-photographer')">
+                        <p> <span id="about-photographer">Photographer</span>
+                    </li>
+                </ul>
+                <div id="about-box" name="border">
+                    <p> I currently a developer intern at Shopify as part of the Shopify Dev Degree program. </p>
+                    <img src="https://www.nchannel.com/wp-content/uploads/2014/04/shopify-ecommerce-platform.png">
+                </div>
+            </div>
         </div>
-    
-        <div class="section"  id="resume">
-        <h1 class="section-header">RESUME</h1>
-        <p>
-            Lorem ipsum dolor sit amet, duo ei veri mollis eripuit. Scripta quaestio eum at. Utamur corpora suavitate id est, ei qui inimicus laboramus referrentur. Est eleifend definitiones ad, duis denique eu eam, per te eius ferri. Iracundia moderatius te pro, ut eam cibo dicta invidunt, facete audiam mei te.qElit error sit ne, elitr prodesset vim te. Pro corpora ocurreret et, usu at primis definitiones. Ius mazim graeco cetero at, pro no petentium accusamus. An iisque debitis delicata pro. In cum prima laoreet epicuri, sumo choro ut eum, usu at vidisse explicari philosophia. Reque pericula vis no.
-        </p>
+        <div class="section" id="portfolio">
+            <div class="v-center">
+                <h1 class="section-header">PORTFOLIO</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, duo ei veri mollis eripuit. Scripta quaestio eum at. Utamur corpora suavitate id est, ei qui inimicus laboramus referrentur. Est eleifend definitiones ad, duis denique eu eam, per te eius ferri. Iracundia moderatius te pro, ut eam cibo dicta invidunt, facete audiam mei te.qElit error sit ne, elitr prodesset vim te. Pro corpora ocurreret et, usu at primis definitiones. Ius mazim graeco cetero at, pro no petentium accusamus. An iisque debitis delicata pro. In cum prima laoreet epicuri, sumo choro ut eum, usu at vidisse explicari philosophia. Reque pericula vis no.
+                </p>
+            </div>
         </div>
-</div>
-    
-    
-<!-- <script src="jquery-3.2.1.min.js" type="text/javascript"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-<script src="http://vjs.zencdn.net/6.4.0/video.js"></script> 
-<!--<script src="parallax.min.js" type="text/javascript"></script> -->
-<script src="bigvideo.js" type="text/javascript"></script> 
-    <!-- Big Video.js -->
-<script>
-	    $(function() {
-            var BV = new $.BigVideo();
-			BV.init();
-			BV.show('media/Hello-World.mp4',{ambient:true});
-	    });
-    </script>
-       <!-- Smooth Scroll.js-->
-    <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+        <div style="text-align: center;">
+           
+            <a class="app-label" href="https://itunes.apple.com/ca/app/twopg/id1076171815?mt=8"> Food Mania iOS (Free) </a>
+            <div class="parallax-window" data-parallax="scroll" data-image-src="media/FoodMania.jpg" data-z-index="1000">
+            </div>
+           
+            <a class="app-label" href="https://itunes.apple.com/ca/app/food-mania/id952570305?mt=8"> TwoPG iOS (Free) </a>
+             <div class="parallax-window" data-parallax="scroll" data-image-src="media/TwoPg.png" data-z-index="1000">
+            </div>
+                 
+            <a class="app-label" href="https://github.com/NicholasEllul/2x2x2-Rubik-Cube-Solver"> 2x2 Rubik's Cube Solver (Free) </a>
+             <div class="parallax-window" data-parallax="scroll" data-image-src="img/RubiksCube.jpg" data-z-index="1000">
+                 
+        </div>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+        <div class="section" id="resume">
+            <div class=v-center>
+                <h1 class="section-header">RESUME</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, duo ei veri mollis eripuit. Scripta quaestio eum at. Utamur corpora suavitate id est, ei qui inimicus laboramus referrentur. Est eleifend definitiones ad, duis denique eu eam, per te eius ferri. Iracundia moderatius te pro, ut eam cibo dicta invidunt, facete audiam mei te.qElit error sit ne, elitr prodesset vim te. Pro corpora ocurreret et, usu at primis definitiones. Ius mazim graeco cetero at, pro no petentium accusamus. An iisque debitis delicata pro. In cum prima laoreet epicuri, sumo choro ut eum, usu at vidisse explicari philosophia. Reque pericula vis no.
+                </p>
+            </div>
+        </div>
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-    
+
+
+        <!-- <script src="jquery-3.2.1.min.js" type="text/javascript"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Parallax.js -->
+        <script src="parallax.min.js" type="text/javascript"></script>
+        <script src="http://vjs.zencdn.net/6.4.0/video.js"></script>
+
+        <script src="bigvideo.js" type="text/javascript"></script>
+
+        <!-- Big Video.js -->
+        <script>
+            $(function() {
+                var BV = new $.BigVideo();
+                BV.init();
+                BV.show('media/Hello-World.mp4', {
+                    ambient: true
+                });
+            });
+        </script>
+
+        <!-- Smooth Scroll.js-->
+        <script>
+            $(document).ready(function() {
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function() {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
+
+        <script src="main.js"></script>
+
 </body>
+
 </html>

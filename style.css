@@ -1,127 +1,203 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .container {
-	border-width: 1px;
-	border-style: solid;
-	border-color: #03a9f4;
-	background-color: #bbdefb;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #03a9f4;
+    background-color: #bbdefb;
 }
 
-.parallax-window {
-	min-height: 400px;
-	border-radius: 5%;
-	background: transparent;
-	overflow: hidden;
-}
+
 
 .main {
-	background: #1c1c1c;
-	z-index: 999;
-	position: absolute;
-	width: 100%;
-	top: 100%;
-	box-shadow: 0 -20px 20px 20px #1c1c1c;
+    background: #1c1c1c;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    box-shadow: 0 -20px 20px 20px #1c1c1c;
     margin: 0 auto;
 }
 
-a.MyButton{
-    appearance:button;
+a.MenuButton {
+    appearance: button;
     text-decoration: none;
 }
 
-a.MyButton {
-	cursor: pointer;
-	font-weight: 100;
-	font-size: 100%;
-	color: #FFFFFF;
-	border: 1px solid #3366cc;
-	border-radius: 10px;
-	background: rgba(0,0,0,0);
-	transition: all 0.2s ease;
+a.MenuButton {
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 100%;
+    color: #FFFFFF;
+    border: 1px solid #3366cc;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.2s ease;
     padding-left: 10px;
     padding-right: 10px;
-    width: 10px;
+
 }
 
-a.MyButton:hover {
-	color: #ffff00;
-	background: rgba(0,0,0,0.3);
-	transition: all 0.2s ease;
-	border: 1px solid #fff;
+a.MenuButton:hover {
+    color: #ffff00;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    border: 1px solid #fff;
 }
 
 .menu-container {
-	flex-direction: row;
-	list-style: none;
-	justify-content: space-between;
-	display: flex;
-	flex-wrap: wrap;
-	top: 0;
-	position: relative;
-	padding: 0;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    position: relative;
+    padding: 0;
 }
 
 .menu-item {
-	text-align: center;
-	margin: 0 auto;
-	font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3em;
 }
 
-.menu-item > a{
-	flex: 1 auto;
+.menu-item > a {
+    flex: 1 auto;
 }
 
-.v-center  {
-	top: 50%;
-	transform: translateY(-50%);
-	position: relative;
+.v-center {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
+
+p {
+    color: azure;  
+ hbjjhb   page-break-after: always;
+}
+
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	z-index: 999;
-	position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
 }
 
 .overlay h1 {
-	color: white;
-	font-size: 100px;
-	font-weight: lighter;
-	text-align: center;
-	width: 100%;
-	margin: 0px;
-}
-
-
-p {
-    color: azure;
-    font-size: 30px;
-    page-break-after: always;
+    color: white;
+    font-size: 100px;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
 }
 
 .section {
-    width:80%;
-    height: 100%;
+    width: 80%;
+    height: 100vh;
     margin: 0 auto;
-    position: aboslute;
+    position: abslute;
 }
 
 .section-header {
     color: white;
 }
 
-#about{
+
+#about {
     z-index: 99;
 }
 
+
 #portfolio {
-z-index: 10000;
+    z-index: 10000;
     top: 22vh;
+}
+
+#about-dev {
+    color: rgb(156, 204, 101);
+}
+
+#about-student {
+    color: rgb(239, 83, 80);
+}
+
+#about-photographer {
+    color: rgb(66, 165, 245);
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    border: 1px solid #3366cc;
+}
+
+.flex-item {
+    background: rgba(255, 255, 255, 0.1);
+  borderDecided by id border: 1px solid #3366cc;
+    width: 200px;
+    height: 100px;
+    flex-grow: 1;
+ /* background-image: url(https://1enu9c17f1aj3pmqfi35l21c-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/shopify-logo-1.png);
+   background-repeat: no-repeat;
+   background-position: center center;*/
+
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.flex-item:hover{
+        transition: all 0.2s ease;
+        background: rgba(0, 0, 0, 0.3);
+}
+
+#about-box {
+     border: 1px solid #3366cc;
+    
+}
+#about-box > p {
+    margin: 10px;
+    font-size: 50px;
+}
+
+
+#portfolio > .v-center > p {
+    padding-bottom: 20px;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    width:80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.project-Overlay {
+    color:red;
+    font-size: 40px;
+    z-index: 1004;
+}
+
+.app-label {
+    color: rgb(66, 165, 245);
+    font-size: 50pt;
+    text-decoration: none;
 }
