@@ -7,13 +7,18 @@ body {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.main h1 {
+    font-size: 60pt;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff;
+}
+
 .container {
     border-width: 1px;
     border-style: solid;
     border-color: #03a9f4;
     background-color: #bbdefb;
 }
-
 
 
 .main {
@@ -24,6 +29,7 @@ body {
     top: 100%;
     box-shadow: 0 -20px 20px 20px #1c1c1c;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 a.MenuButton {
@@ -80,8 +86,8 @@ a.MenuButton:hover {
 }
 
 p {
-    color: azure;  
- hbjjhb   page-break-after: always;
+    color: azure;
+    hbjjhb page-break-after: always;
 }
 
 
@@ -103,9 +109,9 @@ p {
 
 .section {
     width: 80%;
-    height: 100vh;
     margin: 0 auto;
-    position: abslute;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .section-header {
@@ -115,12 +121,14 @@ p {
 
 #about {
     z-index: 99;
+    height: 100vh;
 }
 
 
 #portfolio {
     z-index: 10000;
     top: 22vh;
+    height: 30vh
 }
 
 #about-dev {
@@ -144,54 +152,64 @@ p {
 
     -webkit-flex-flow: row wrap;
     justify-content: center;
-    border: 1px solid #3366cc;
+    border: 1px solid #3aaacc;
 }
 
 .flex-item {
     background: rgba(255, 255, 255, 0.1);
-  borderDecided by id border: 1px solid #3366cc;
     width: 200px;
     height: 100px;
     flex-grow: 1;
- /* background-image: url(https://1enu9c17f1aj3pmqfi35l21c-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/shopify-logo-1.png);
+    /* background-image: url(https://1enu9c17f1aj3pmqfi35l21c-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/shopify-logo-1.png);
    background-repeat: no-repeat;
    background-position: center center;*/
-
     color: white;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
 }
 
-.flex-item:hover{
-        transition: all 0.2s ease;
-        background: rgba(0, 0, 0, 0.3);
+.flex-item:hover {
+    transition: all 0.2s ease;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 #about-box {
-     border: 1px solid #3366cc;
-    
+
 }
+
 #about-box > p {
-    margin: 10px;
     font-size: 50px;
+    position: relative;
 }
 
+.description {
+    position: absolute;
+    page-break-after: always;
+    display: none;
+}
 
-#portfolio > .v-center > p {
-    padding-bottom: 20px;
+.description a {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(255, 241, 118);
+}
+
+.description a:hover {
+    color: rgb(41, 182, 246);
 }
 
 .parallax-window {
-    min-height: 400px;
+    height: 400px;
     background: transparent;
-    width:80%;
+    width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
 .project-Overlay {
-    color:red;
+    color: red;
     font-size: 40px;
     z-index: 1004;
 }
@@ -200,4 +218,8 @@ p {
     color: rgb(66, 165, 245);
     font-size: 50pt;
     text-decoration: none;
+}
+
+.section p {
+    font-size: 30px;
 }
