@@ -85,12 +85,6 @@ a.MenuButton:hover {
     position: relative;
 }
 
-p {
-    color: azure;
-    hbjjhb page-break-after: always;
-}
-
-
 .overlay {
     height: 100%;
     width: 100%;
@@ -110,7 +104,7 @@ p {
 .section {
     width: 80%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -118,7 +112,9 @@ p {
     color: white;
 }
 
-
+p {
+    color:azure;
+}
 #about {
     z-index: 99;
     height: 100vh;
@@ -174,8 +170,12 @@ p {
     background: rgba(0, 0, 0, 0.3);
 }
 
-#about-box {
+#dev-desc .underline {
+    border-bottom: 1px solid rgb(156, 204, 101);
+}
 
+#student-desc .underline {
+    border-bottom: 1px solid rgb(239, 83, 80);
 }
 
 #about-box > p {
@@ -183,6 +183,10 @@ p {
     position: relative;
 }
 
+.description p {
+    width: 90%;
+    font-weight: 200;
+}
 .description {
     position: absolute;
     page-break-after: always;
@@ -193,6 +197,7 @@ p {
     font-size: 30px;
     text-decoration: none;
     color: rgb(255, 241, 118);
+font-weight: 400;
 }
 
 .description a:hover {
@@ -216,7 +221,9 @@ p {
 
 .app-label {
     color: rgb(66, 165, 245);
-    font-size: 50pt;
+    font-weight: 200;
+    border-bottom: 1px solid rgb(66, 165, 245);
+    font-size: 40pt;
     text-decoration: none;
 }
 

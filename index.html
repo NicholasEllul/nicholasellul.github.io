@@ -41,14 +41,18 @@
                 </ul>
                 <div id="about-box">
                     <div class="description" id="dev-desc">
-                        <p> I currently working at Shopify part of their <a href="mydevlife.ca">Dev Degree</a> program. </p>
+                        <p>I am currently working at <span class="underline">Shopify</span> as part of their <a href="https://www.mydevlife.ca/">Dev Degree program</a>.
+                            <!-- description taken from mydevlife.ca -->
+                            Dev Degree is a <span class="underline">work-integrated learning program</span> that combines an accredited university degree with work experience. We work alongside industry mentors and gain critical skills to <span class="underline">solve real problems </span> with modern technology.
+                        </p>
                     </div>
 
                     <div class="description" id="student-desc">
-                        <p> I am studying Computer Science at Carleton University partnered with Shopify. </p>
+                        <p> I am currently enrolled in the <a href="https://carleton.ca/scs/future-students/bcs-internship/">
+                            Bachelors of Computer Science</a> partnership between Carleton University and Shopify. At the University I am a member of both the <a href="http://ccss.carleton.ca/">Carleton Computer Science Society </a>and the Carleton University <a href="http://carletonphotographyclub.com/">Photography Club</a>.</p>
                     </div>
                     <div class="description" id="photo-desc">
-                        <p> I enjoy photograhy and photo editing. Check out my instagram <a href="instagram.com/nicke_19">here</a> </p>
+                        <p>A sample of some of my photography can be seen <a href="instagram.com/nicke_19">here</a>. </p>
                     </div>
                     <div id="filler-text">
                         <p id="filler-text">Click above to learn about me!</p>
@@ -58,18 +62,19 @@
         </div>
         <div class="section" id="portfolio">
             <div class="v-center">
-                <h1 class="section-header">PORTFOLIO</h1>
-                <a href="github.com/nicholasellul"><img  width="40px" height="40px" src="http://www.smallbutdigital.com/static/media/twitter.png"></a>
+                <h1 class="section-header">PORTFOLIO  <a href="https://github.com/NicholasEllul"> <img  width="60px" height="60px" align="bottom" src="http://www.smallbutdigital.com/static/media/twitter.png"></a> 
+                </h1>
+               
             </div>
         </div>
 
         <div style="text-align: center;">
 
-            <a class="app-label" href="https://itunes.apple.com/ca/app/twopg/id1076171815?mt=8"> Food Mania iOS (Free) </a>
+            <a class="app-label" href="https://itunes.apple.com/ca/app/food-mania/id952570305?mt=8"> Food Mania iOS (Free) </a>
             <div class="parallax-window" data-parallax="scroll" data-image-src="media/FoodMania.jpg" data-z-index="1000">
             </div>
 
-            <a class="app-label" href="https://itunes.apple.com/ca/app/food-mania/id952570305?mt=8"> TwoPG iOS (Free) </a>
+            <a class="app-label" href="https://itunes.apple.com/ca/app/twopg/id1076171815?mt=8"> TwoPG iOS (Free) </a>
             <div class="parallax-window" data-parallax="scroll" data-image-src="media/TwoPg.png" data-z-index="1000">
             </div>
 
@@ -83,10 +88,10 @@
 
         </div>
 
-        <div class="section" id="resume">
-
-            <h1 class="section-header v-center">RESUME</h1>
-
+        <div class="section" >
+            <h1 class="section-header v-center" id="resume">RESUME <a href="https://www.linkedin.com/in/nicholas-ellul-01b265127/s"><img width="60
+                px" height="60px" src="img/LinkedinLogo.png" align="bottom"></a></h1>
+            
             <iframe style="margin: 0 auto; display:block;" src="https://drive.google.com/file/d/0ByvXoAlKmGsVVzk5bFBVOEdieE0/preview" width="720" height="900"></iframe>
 
         </div>
@@ -159,7 +164,7 @@
 
             let descIds = ['dev-desc', 'student-desc', 'photo-desc'];
             document.getElementById('filler-text').style.display = 'none';
-            
+
             for (i = 0; i < 3; i++) {
                 if (descIds[i] === idOfWhatToShow) {
                     document.getElementById(descIds[i]).style.display = 'block';
